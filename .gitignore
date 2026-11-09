@@ -1,0 +1,37 @@
+# Raw data (public, but downloaded separately; see README)
+meta_vrs/data_raw/
+data_raw/
+*.zip
+
+# Environment files and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*credentials*
+*secret*
+.netrc
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Temporary and OS files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+~$*
+.DS_Store
+Thumbs.db
+desktop.ini
