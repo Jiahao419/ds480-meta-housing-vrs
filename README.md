@@ -1,25 +1,21 @@
-# ds480-meta-housing-vrs
+# Meta VRS Ad Delivery Analysis
 
-DS480 Paper 2 data analysis of Meta's Variance Reduction System (VRS), based on the public dataset from [Imana et al. (2025)](https://arxiv.org/abs/2506.16560).
+DS480 Paper 2 analysis of Meta's Variance Reduction System (VRS), using the [public dataset from Imana et al. (2025)](https://ant.isi.edu/datasets/addelivery-vrs/).
 
-The script compares **36 matched VRS-on/off experiments** (18 race and 18 gender pairs), focusing on delivery variance, unique reach, and advertising cost.
+## Uploaded files
 
-## Files
+- `meta_vrs/analyze_vrs.py` — Python analysis script
+- `meta_vrs/requirements.txt` — required Python packages
+- `DATA_QA.md` — data checks and cleaning notes
+- `meta_vrs.zip` — uploaded project archive
 
-- `meta_vrs/analyze_vrs.py` — analysis and figure generation
-- `meta_vrs/requirements.txt` — Python dependencies
+## Run
 
-## How to run
-
-1. Download `vrs_ad_delivery_data-2025-05-23.zip` from the [public dataset](https://ant.isi.edu/datasets/addelivery-vrs/).
-2. Save the ZIP at `meta_vrs/data_raw/vrs_ad_delivery_data-2025-05-23.zip`.
-3. From the repository folder, run:
+The script uses `vrs_ad_delivery_data-2025-05-23.zip` from the public dataset. Place it in `meta_vrs/data_raw/` before running:
 
 ```bash
 python -m pip install -r meta_vrs/requirements.txt
 python meta_vrs/analyze_vrs.py
 ```
 
-Results are saved in `meta_vrs/output/` (tables and summary) and `meta_vrs/figures/` (charts).
-
-The raw dataset is not included. Race estimates are based on geographic inference, and the experimental ads were not actual housing listings.
+The script generates result tables and figures locally. They are not uploaded as separate folders in this repository.
